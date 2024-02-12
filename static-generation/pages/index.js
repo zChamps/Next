@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import fs from "fs/promises"
 import path from "path";
+import Link from "next/link";
 
 
 //Recebe props pq elas são passadas pelo getStaticProps
@@ -10,7 +11,7 @@ export default function Home(props) {
   return (
     <main className={`flex min-h-screen flex-col items-center justify-between p-24 `}>
       <h1>DESCHAMPS</h1>
-      {products.map(item => <p id={item.id}>{item.title}</p>)}
+      {products.map(item => <p id={item.id}><Link href={`/${item.id}`}> {item.title}</Link></p>)}
     </main>
   );
 }
