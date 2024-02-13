@@ -1,0 +1,1 @@
+Relativo a criação de API com o NEXTjs
