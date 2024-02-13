@@ -32,7 +32,7 @@ const getData = async ()=> {
 }
 
 
-
+//  pré-renderiza páginas com dados estáticos, buscando e inserindo os dados no momento da construção da página. Ideal para conteúdo estático.
 export async function getStaticProps(context) {
 
     const { params } = context // pegando os parametros recebidos pelo getStaticProps
